@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+
+    <script defer src="index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <div class="cardContent">
+        <h3>Stay updated!</h3>
+
+        <p class="text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <div>
+          <div class="points">
+            <img class="check" src="./assets/images/icon-success.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="points">
+            <img class="check" src="./assets/images/icon-success.svg" alt="" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="points">
+            <img class="check" src="./assets/images/icon-success.svg" alt="" />
+            <p>And much more!</p>
+          </div>
+        </div>
+
+        <h5>Email address</h5>
+        <div class="email">
+          <label for="email"><i class="fa fa-envelope"></i> </label>
+          <input type="email" placeholder="email@company.com" />
+        </div>
+
+        <div class="button" id="btn">
+          <button>Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+
+      <!-- <h2>Thanks for subscribing!</h2>
+
+      <p>A confirmation email has been sent to <span>ash@loremcompany.com.</span>
+         Please open it and click the button inside to
+        confirm your subscription.</p>
+
+        <button>Dismiss message</button> -->
+
+      <!-- Success message end -->
+      <img
+        class="mainImg"
+        src="./assets/images/illustration-sign-up-desktop.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="modal" id="modal">
+      <img class="icon" src="./assets/images/icon-success.svg" alt="" />
+      <h3>Thanks for subscribing!</h3>
+      <p>
+        A confirmation email has been sent to
+        <b>ash@loremcompany.com.</b> Please open it and click the button inside
+        to confirm your subscription.
+      </p>
+      <button class="btn">Dismiss message</button>
+    </div>
+  </body>
+</html>
