@@ -21,28 +21,27 @@ if (!isValidEmail(emailValue)) {
   alert("Please enter a valid email adress.");
 }
 
-btn.addEventListener("click"),
-  function () {
-    const emailValue = emailInput.value.trim();
+// btn.addEventListener("click"),
+//   function () {
+//     const emailValue = emailInput.value.trim();
 
-    btn.onclick = function (event) {
-      // if (event.target == card) {
-      card.style.display = "none";
-      modal.style.display = "block";
-      // }
-    };
+btn.onclick = function (event) {
+  // if (event.target == card) {
+  card.style.display = "none";
+  modal.style.display = "block";
+  // }
+};
 
-    modalBtn.onclick = function (event) {
-      // if (event.target == card) {
-      card.style.display = "flex";
-      modal.style.display = "none";
-      emailInput.value = "";
-      // }
-    };
+modalBtn.onclick = function (event) {
+  // if (event.target == card) {
+  card.style.display = "flex";
+  modal.style.display = "none";
+  emailInput.value = "";
+  // }
+};
 
-    // window.onclick = function (event) {
-    //   if (event.target == modal) {
-    //     modal.style.display = "none";
-    //   }
-    // };
-  };
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
