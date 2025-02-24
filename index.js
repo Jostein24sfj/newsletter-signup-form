@@ -10,9 +10,9 @@ const modalBtn = document.getElementById("modalBtn");
 const emailInput = document.querySelector(".email input");
 console.log(emailInput);
 
-// function isValidEmail(email) {
-//   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-// }
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 
 btn.onclick = function () {};
 const emailValue = emailInput.value.trim();
