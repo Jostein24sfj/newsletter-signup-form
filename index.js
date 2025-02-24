@@ -14,14 +14,13 @@ function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-btn.onclick = function () {};
-const emailValue = emailInput.value.trim();
-
 // btn.addEventListener("click"),
 //   function () {
 //     const emailValue = emailInput.value.trim();
 
 btn.onclick = function (event) {
+  console.log(isValidEmail());
+  const emailValue = emailInput.value.trim();
   if (!isValidEmail(emailValue)) {
     alert("Please enter a valid email adress.");
   } else {
