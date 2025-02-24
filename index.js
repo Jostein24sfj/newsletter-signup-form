@@ -17,18 +17,19 @@ function isValidEmail(email) {
 btn.onclick = function () {};
 const emailValue = emailInput.value.trim();
 
-if (!isValidEmail(emailValue)) {
-  alert("Please enter a valid email adress.");
-}
-
 // btn.addEventListener("click"),
 //   function () {
 //     const emailValue = emailInput.value.trim();
 
 btn.onclick = function (event) {
+  if (!isValidEmail(emailValue)) {
+    alert("Please enter a valid email adress.");
+  } else {
+    card.style.display = "none";
+    modal.style.display = "block";
+  }
   // if (event.target == card) {
-  card.style.display = "none";
-  modal.style.display = "block";
+
   // }
 };
 
