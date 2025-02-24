@@ -25,13 +25,14 @@ body {
 }
 
 .cardContent {
+  padding-top: 64px;
   padding-right: 64px;
   gap: 12px;
 }
 
 h3 {
   color: rgb(35, 39, 66);
-  font-size: 54px;
+  font-size: 64px;
   padding-top: 100px;
   padding-bottom: 24px;
 }
